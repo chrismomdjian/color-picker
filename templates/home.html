@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="jumbotron text-center">
+    <h2>Color Application</h2>
+    <div class="well">
+      <div class="center-block circle-shape" style="background-color: {{ color }};"></div>
+    </div>
+
+    <div class="well">
+      {% for color in choices %}
+        <a href="/home/{{ color['color'] }}">
+          <div class="palettes" style="background-color: {{ color['color'] }};"></div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

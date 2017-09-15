@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="jumbotron text-center">
+    <div class="well">
+      <div class="center-block" style="background-color: {{ color }}; border-radius: 100%; width: 100px; height: 100px;"></div>
+    </div>
+    <a href="{{ url_for('index') }}">
+      <div class="btn btn-primary">Go back</div>
+    </a>
+  </div>
+{% endblock %}
