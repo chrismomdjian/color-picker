@@ -1,6 +1,11 @@
 html, body {
   margin: 0px;
   padding: 0px;
+  background-color: #80818e; /* purple-blue color */
+}
+
+.jumbotron {
+  margin-top: 25px;
 }
 
 a:hover, a:focus {

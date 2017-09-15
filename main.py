@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect
 from data import colors
 
 app = Flask(__name__)
