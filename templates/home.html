@@ -16,7 +16,8 @@
           {% for choice in choices %}
             {% if choice['color'] == color %}
               <h4>Hexidecimal value</h4>
-              <h2>{{ choice['hex'] }}</h2>
+              <hr>
+              <h3>{{ choice['hex'] }}</h>
             {% endif %}
           {% endfor %}
         </div>
@@ -24,11 +25,12 @@
           {% for choice in choices %}
             {% if choice['color'] == color %}
               <h4>RGBA values</h4>
-              <h2>(
+              <hr>
+              <h3>(
               {% for rgba_value in choice['rgba'] %}
                 <span>{{ rgba_value }}</span>
               {% endfor %}
-              )</h2>
+              )</h3>
             {% endif %}
           {% endfor %}
         </div>
